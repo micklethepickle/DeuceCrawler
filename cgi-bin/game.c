@@ -109,7 +109,7 @@ int main(void){
 			"<h3>We have %d mana and %d gold left.</h3>"
 			"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/game.cgi\" method=\"get\">"
 			    "<input type=\"text\" name=\"MANA\" placeholder=\"Number of mana\" style=\"width:800px;\"></br>"
-			    "<input title=\"Mana:\" style=\"width:100px; height:20px;\" type=\"submit\" value=\"Submit\">"
+			    "<input title=\"MANA:\" style=\"width:100px; height:20px;\" type=\"submit\" value=\"Submit\">"
 			    "<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 			"</form>"
 
@@ -199,7 +199,8 @@ int main(void){
 			sprintf(gold,"%d",rGold);
 			sprintf(mana,"%d",rMana);
 			write = strcat(strcat(mana,","),strcat(gold,",1"));
-			writeFile(mana,file);
+			writeFile(write,file);
+			//update player data
 
 			pMana=pMana+numMana;
 			pGold=pGold+(5-numMana);

@@ -55,6 +55,7 @@ int main(void){
 	while(strcmp(token,"command")!=0){
 		token=strtok(NULL,S);
 	}
+	toekn=strtok(NULL,S);
 	if (strcmp(token,"deuce")==0){
 		command=0;
 	}else if (strcmp(token,"QUIT")==0){

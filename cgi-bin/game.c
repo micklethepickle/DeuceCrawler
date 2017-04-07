@@ -96,7 +96,7 @@ int main(void){
 		token = strtok(NULL,S);
 		rGold = atoi(token);
 
-		printf("%s%c%c\n","Content-Type:text/html;charset=iso-8859-1",13,10);
+		printf("Content-type:text/html\n\n");
 		printf("<!DOCTYPE html>"
 			"<html>"
 			"<title>DeuceVille</title>"
@@ -117,7 +117,7 @@ int main(void){
 	//QUIT
 	}else if (command==1){
 
-		printf("%s%c%c\n","Content-Type:text/html;charset=iso-8859-1",13,10);
+		printf("Content-type:text/html\n\n");
 		printf("<!DOCTYPE html>"
 			"<html>"
 			"<title>DeuceVille</title>"
@@ -204,7 +204,7 @@ int main(void){
 			pGold=pGold+(5-numMana);
 			//test for win
 			if (pGold>=100){
-				printf("%s%c%c\n","Content-Type:text/html;charset=iso-8859-1",13,10);
+				printf("Content-type:text/html\n\n");
 				printf("<!DOCTYPE html>"
 				"<html>"
 				"<title>DeuceVille</title>"
@@ -217,7 +217,7 @@ int main(void){
 				//or else go back to previous room
 			}else{
 
-				printf("%s%c%c\n","Content-Type:text/html;charset=iso-8859-1",13,10);
+				printf("Content-type:text/html\n\n");
 				printf("<!DOCTYPE html>"
 				"<html>"
 				"<title>DeuceVille</title>"
@@ -273,7 +273,7 @@ int main(void){
 			}
 		//not enough resources so retry
 		}else{
-			printf("%s%c%c\n","Content-Type:text/html;charset=iso-8859-1",13,10);
+			printf("Content-type:text/html\n\n");
 			printf("<!DOCTYPE html>"
 			"<html>"
 			"<title>DeuceVille</title>"
@@ -297,7 +297,7 @@ int main(void){
 	//wrong answer
 	}else if (command==3){
 
-		printf("%s%c%c\n","Content-Type:text/html;charset=iso-8859-1",13,10);
+		printf("Content-type:text/html\n\n");
 		printf("<!DOCTYPE html>"
 			"<html>"
 			"<title>DeuceVille</title>"

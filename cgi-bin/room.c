@@ -116,7 +116,7 @@ int main(void){
 			"<center><img src=\"http://i.imgur.com/MwyPH84.jpg\" alt=\"DeuceVille\" style=\"width:800px;height:400px;\">"
 			"</center>"
 			"<h3>Boss Challenge</h3>"
-			"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/game.cgi\" method=\"post\">"
+			"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/game.cgi\" method=\"get\">"
 			    "<input type=\"text\" name=\"command\" placeholder=\"A versatile word synonymous to 2?\" style=\"width:800px;\"></br>"
 			    "<input title=\"commands: QUIT, deuce\" style=\"width:100px; height:20px;\" type=\"submit\" value=\"Submit\">"
 			    "<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"

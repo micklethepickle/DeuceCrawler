@@ -192,7 +192,7 @@ int main(void){
 		
 
 		//give the mana and gold to the player
-		if (numMana>=rMana && (5-numMana)>=rGold){
+		if (numMana<=rMana && (5-numMana)<=rGold){
 
 			//update resources.csv
 			rGold = rGold-(5-numMana);
@@ -285,7 +285,7 @@ int main(void){
 			"<h1>Welcome to DeuceVille</h1>"
 			"<center><img src=\"http://i.imgur.com/MwyPH84.jpg\" alt=\"DeuceVille\" style=\"width:800px;height:400px;\">"
 			"</center>"
-			"<h3>Not enough resources. We have %d mana and %d gold left.</h3>"
+			"<h3>You cannot take %d mana and %d gold. We only have %d mana and %d gold left.</h3>"
 			"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/game.cgi\" method=\"get\">"
 			    "<input type=\"text\" name=\"command MANA\" placeholder=\"Number of mana\" style=\"width:800px;\"></br>"
 			    "<input title=\"Mana:\" style=\"width:100px; height:20px;\" type=\"submit\" value=\"Submit\">"
@@ -293,7 +293,7 @@ int main(void){
 			"</form>"
 
 			"</body>"
-			"</html>",rMana,rGold,pMana,pGold);
+			"</html>",numMana,5-numMana,rMana,rGold,pMana,pGold);
 		}
 
 		

@@ -52,7 +52,7 @@ int main(void){
 	printf("%s",token);
 
 	//check which command
-	while(strcmp(token,"command")!=0){
+	while(strcmp(token,"command")!=0 && strcmp(token,"MANA")!=0){
 		token=strtok(NULL,S);
 	}
 	token=strtok(NULL,S);
@@ -108,7 +108,7 @@ int main(void){
 			"</center>"
 			"<h3>We have %d mana and %d gold left.</h3>"
 			"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/game.cgi\" method=\"get\">"
-			    "<input type=\"text\" name=\"command;MANA\" placeholder=\"Number of mana\" style=\"width:800px;\"></br>"
+			    "<input type=\"text\" name=\"command\" placeholder=\"Number of mana\" style=\"width:800px;\"></br>"
 			    "<input title=\"MANA:\" style=\"width:100px; height:20px;\" type=\"submit\" value=\"Submit\">"
 			    "<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 			"</form>"
@@ -286,7 +286,7 @@ int main(void){
 			"</center>"
 			"<h3>Not enough resources. We have %d mana and %d gold left.</h3>"
 			"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/game.cgi\" method=\"get\">"
-			    "<input type=\"text\" name=\"command;MANA\" placeholder=\"Number of mana\" style=\"width:800px;\"></br>"
+			    "<input type=\"text\" name=\"command\" placeholder=\"Number of mana\" style=\"width:800px;\"></br>"
 			    "<input title=\"Mana:\" style=\"width:100px; height:20px;\" type=\"submit\" value=\"Submit\">"
 			    "<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 			"</form>"

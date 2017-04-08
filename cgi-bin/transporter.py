@@ -16,16 +16,6 @@ resources_file = open("resources.csv", "r")
 resources = resources_file.read().split(",")
 resources_file.close()
 
-if mana == 0:
-	print "\n\n"
-	print """
-	<!DOCTYPE html>
-	<html>
-	<body style="text-align: center;">
-	<h1>GAME OVER, YOU RAN OUT OF MANA</h1>
-	</body>
-	</html>
-	"""
 
 elif int(resources[2]) == 1:
 	#regenerate previous room using roomUrl with current gold and mana

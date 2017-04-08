@@ -143,6 +143,7 @@ int main(void){
 		if (pGold>=n){
 			//update resources.csv
 		rGold = rGold+n;
+		sprintf(mana,"%d",rMana);
 		sprintf(gold,"%d",rGold);
 		write = strcat(strcat(mana,","),strcat(gold,",1"));
 		writeFile(mana,file);

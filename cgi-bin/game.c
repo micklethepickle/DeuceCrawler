@@ -68,6 +68,7 @@ int main(void){
 	}else{
 		command=3;
 	}
+
 	//get player inventory
 	while(strcmp(token,"inventory")!=0){
 		token=strtok(NULL,S);
@@ -128,7 +129,7 @@ int main(void){
 			"<h1>Welcome to DeuceVille</h1>"
 			"<center><img src=\"http://i.imgur.com/MwyPH84.jpg\" alt=\"DeuceVille\" style=\"width:800px;height:400px;\">"
 			"</center>"
-			"<h3>DROP succesful</h3>"
+			"<h3>Boss challenge EXIT successful.</h3>"
 			"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi\" method=\"get\">"
 			    "<input type=\"text\" name=\"command\" placeholder=\"What will you do at DeuceVille?\" style=\"width:800px;\"></br>"
 			    "<input title=\"commands: PLAY, DROP, EXIT, REFRESH\" style=\"width:100px; height:20px;\" type=\"submit\" value=\"Submit\">"

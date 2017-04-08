@@ -8,7 +8,7 @@ print "Content-type: text/html"
 form = cgi.FieldStorage()
 
 inventory = (form["inventory"].value).split(",")
-mana = int(inventory[0])
+mana = int(inventory[0]) - 1
 gold = int(inventory[1])
 roomUrl = form["url"].value
 
@@ -16,13 +16,24 @@ resources_file = open("resources.csv", "r")
 resources = resources_file.read().split(",")
 resources_file.close()
 
-if int(resources[2]) == 1:
+if mana == 0:
+	print "\n\n"
+	print """
+	<!DOCTYPE html>
+	<html>
+	<body style="text-align: center;">
+	<h1>GAME OVER, YOU RAN OUT OF MANA</h1>
+	</body>
+	</html>
+	"""
+
+elif int(resources[2]) == 1:
 	#regenerate previous room using roomUrl with current gold and mana
 	print "location:{0}\r\n".format(roomUrl)
 elif int(resources[2]) == 0:
 	#room is empty so generate our html
 	resources_file = open("resources.csv", "w")
-	resources_file.write("{0},{1},{2}".format(mana, gold, '1'))
+	resources_file.write("{0},{1},{2}".format(resources[0]+1, resources[1], '1'))
 	resources_file.close()
 	print "\n\n"
 	print """

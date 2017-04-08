@@ -23,7 +23,7 @@ elif int(resources[2]) == 1:
 elif int(resources[2]) == 0:
 	#room is empty so generate our html
 	resources_file = open("resources.csv", "w")
-	resources_file.write("{0},{1},{2}".format(resources[0]+1, resources[1], '1'))
+	resources_file.write("{0},{1},{2}".format(resources[0]+1+"", resources[1]+"", '1'))
 	resources_file.close()
 	print "\n\n"
 	print """

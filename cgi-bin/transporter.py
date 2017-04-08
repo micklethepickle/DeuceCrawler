@@ -17,7 +17,7 @@ resources = resources_file.read().split(",")
 resources_file.close()
 	
 
-elif int(resources[2]) == 1:
+if int(resources[2]) == 1:
 	#regenerate previous room using roomUrl with current gold and mana
 	print "location:{0}\r\n".format(roomUrl)
 elif int(resources[2]) == 0:

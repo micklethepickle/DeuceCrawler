@@ -283,6 +283,100 @@ int main(void){
 				"</html>",pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold);
 			}
 		//not enough resources so retry
+
+		}else if (rMana+rGold<=5){
+
+			//update player data
+
+			pMana=pMana+rMana;
+			pGold=pGold+rGold;
+
+			//update resources.csv
+			rGold = 0;
+			rMana = 0;
+			sprintf(gold,"%d",rGold);
+			sprintf(mana,"%d",rMana);
+			write = strcat(strcat(mana,","),strcat(gold,",1"));
+			writeFile(write,file);
+
+			//test for win
+			if (pGold>=100){
+				printf("Content-type:text/html\n\n");
+				printf("<!DOCTYPE html>"
+				"<html>"
+				"<title>DeuceVille</title>"
+				"<body style=\"text-align: center;\">"
+
+				"<h1>Welcome to DeuceVille</h1>"
+				"<center><img src=\"http://i.imgur.com/MwyPH84.jpg\" alt=\"DeuceVille\" style=\"width:800px;height:400px;\">"
+				"</center>"
+				"<h3>You are the new owner of DeuceVille. Congratulations!</h3>");
+				//or else go back to previous room
+			}else{
+
+				printf("Content-type:text/html\n\n");
+				printf("<!DOCTYPE html>"
+				"<html>"
+				"<title>DeuceVille</title>"
+				"<body style=\"text-align: center;\">"
+
+				"<h1>Welcome to DeuceVille</h1>"
+				"<center><img src=\"http://i.imgur.com/MwyPH84.jpg\" alt=\"DeuceVille\" style=\"width:800px;height:400px;\">"
+				"</center>"
+				"<h3>The remaining resources of the room have been added to your inventory.</h3>"
+				"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi\" method=\"get\">"
+				    "<input type=\"text\" name=\"command\" placeholder=\"What will you do at DeuceVille?\" style=\"width:800px;\"></br>"
+				    "<input title=\"commands: PLAY, DROP, EXIT, REFRESH\" style=\"width:100px; height:20px;\" type=\"submit\" value=\"Submit\">"
+				    "<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
+				"</form>"
+				"<center>"
+					"<table>"
+						"<tr>"
+							"<th></th>"
+							"<th>"
+								"<form action=\"http://google.com\">"
+									"<input type=\"submit\" value=\"North\" />"
+									"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+									"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
+								"</form>"
+							"</th>"
+							"<th></th>"
+						"</tr>"
+						"<tr>"
+							"<th>"
+								"<form action=\"http://google.com\">"
+									"<input type=\"submit\" value=\"West\" />"
+									"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+									"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
+								"</form>"
+							"</th>"
+							"<th></th>"
+							"<th>"
+								"<form action=\"http://google.com\">"
+									"<input type=\"submit\" value=\"East\" />"
+									"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+									"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
+								"</form>"
+							"</th>"
+						"</tr>"
+						"<tr>"
+							"<th></th>"
+							"<th>"
+								"<form action=\"http://google.com\">"
+									"<input type=\"submit\" value=\"South\" />"
+									"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+									"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
+								"</form>"
+							"</th>"
+							"<th></th>"
+						"</tr>"
+					"</table>"
+				"</center>"
+
+				"</body>"
+				"</html>",pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold);
+			}
+		//remaining resources so retry
 		}else{
 			printf("Content-type:text/html\n\n");
 			printf("<!DOCTYPE html>"

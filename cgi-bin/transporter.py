@@ -10,12 +10,13 @@ form = cgi.FieldStorage()
 inventory = (form["inventory"].value).split(",")
 mana = int(inventory[0]) - 1
 gold = int(inventory[1])
-roomUrl = form["url"].value
+roomUrl = form["URL"].value
 
 resources_file = open("resources.csv", "r")
 resources = resources_file.read().split(",")
 resources_file.close()
 
+#out of mana game over screen
 if mana == 0:
 	print "\n\n"
 	print """

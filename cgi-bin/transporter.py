@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 import cgi
 import cgitb
 cgitb.enable()
@@ -12,7 +12,7 @@ mana = int(inventory[0]) - 1
 gold = int(inventory[1])
 roomUrl = form["URL"].value
 
-resources_file = open("resources.csv", "r")
+resources_file = open("./resources.csv", "r")
 resources = resources_file.read().split(",")
 resources_file.close()
 
@@ -33,7 +33,7 @@ elif int(resources[2]) == 1:
 	print "location:{0}\r\n".format(roomUrl)
 elif int(resources[2]) == 0:
 	#room is empty so generate our html
-	resources_file = open("resources.csv", "w")
+	resources_file = open("./resources.csv", "w")
 	resources_file.write("{0},{1},{2}".format(int(resources[0])+1, resources[1], '1'))
 	resources_file.close()
 	print "\n\n"

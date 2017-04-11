@@ -21,6 +21,7 @@ transporterUrl = form["transporter"].value
 
 properUrl = transporterUrl + "?URL=" + roomUrl + "&inventory=" + mana + "%2C" + gold
 
+print "Content-type: text/html"
 print "location:{0}\r\n".format(properUrl)
 
 

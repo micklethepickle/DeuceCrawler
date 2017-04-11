@@ -60,7 +60,7 @@ elif int(resources[2]) == 0:
 					<th>
 						<form action="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py" method="get">
 							<input type="submit" value="North" />
-							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH"/>
+							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=http%3A%2F%2Fwww.cs.mcgill.ca%2F%7Emma106%2Froom.html&inventory={0}%2C{1}"/>
 							<input type="hidden" name=inventory value="{0},{1}" />
 						</form>
 					</th>
@@ -70,7 +70,7 @@ elif int(resources[2]) == 0:
 					<th>
 						<form action="http://google.com">
 							<input type="submit" value="West" />
-							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH"/>
+							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=http%3A%2F%2Fwww.cs.mcgill.ca%2F%7Emma106%2Froom.html&inventory={0}%2C{1}"/>
 							<input type="hidden" name=inventory value="{0},{1}" />
 						</form>
 					</th>
@@ -78,7 +78,7 @@ elif int(resources[2]) == 0:
 					<th>
 						<form action="http://google.com">
 							<input type="submit" value="East" />
-							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH"/>
+							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=http%3A%2F%2Fwww.cs.mcgill.ca%2F%7Emma106%2Froom.html&inventory={0}%2C{1}"/>
 							<input type="hidden" name=inventory value="{0},{1}" />
 						</form>
 					</th>
@@ -88,7 +88,7 @@ elif int(resources[2]) == 0:
 					<th>
 						<form action="http://google.com">
 							<input type="submit" value="South" />
-							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH"/>
+							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=http%3A%2F%2Fwww.cs.mcgill.ca%2F%7Emma106%2Froom.html&inventory={0}%2C{1}"/>
 							<input type="hidden" name=inventory value="{0},{1}" />
 						</form>
 					</th>

@@ -13,13 +13,11 @@ resources_file2.close()
 
 form = cgi.FieldStorage()
 
-inventory = (form["inventory"].value).split(",")
-mana = inventory[0]
-gold = inventory[1]
+
 roomUrl = form["URL"].value
 transporterUrl = form["transporter"].value
 
-properUrl = transporterUrl + "?URL=" + roomUrl + "&inventory=" + mana + "%2C" + gold
+properUrl = transporterUrl + "?URL=" + roomUrl + "&inventory="
 
 print "Content-type: text/html\n\n"
 print properUrl

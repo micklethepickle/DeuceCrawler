@@ -17,15 +17,9 @@ resources_file2.close()
 
 form = cgi.FieldStorage()
 
-inventory = (form["inventory"].value).split(",")
-mana = inventory[0]
-gold = inventory[1]
-roomUrl = form["URL"].value
-transporterUrl = form["transporter"].value
 
-properUrl = transporterUrl + "?URL=" + roomUrl + "&inventory=" + mana + "%2C" + gold
 
-print properUrl
+print form
 #print "location:{0}\r\n".format(properUrl)
 
 

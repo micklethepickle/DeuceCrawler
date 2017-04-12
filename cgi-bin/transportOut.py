@@ -13,7 +13,7 @@ resources_file2.close()
 
 form = cgi.FieldStorage()
 
-inventory = (form["inventory"].value).split(",")
+inventory = (form["inventory"])
 mana = inventory[0]
 gold = inventory[1]
 roomUrl = form["URL"].value

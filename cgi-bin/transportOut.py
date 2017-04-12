@@ -20,6 +20,7 @@ form = cgi.FieldStorage()
 
 
 print form
+print form["inventory"]
 #print "location:{0}\r\n".format(properUrl)
 
 

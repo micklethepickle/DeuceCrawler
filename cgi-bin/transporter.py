@@ -39,6 +39,7 @@ elif int(resources[2]) == 0:
 	print "\n\n"
 	print """
 			
+				
 		<!DOCTYPE html>
 		<html>
 		<title>DeuceVille</title>
@@ -48,48 +49,52 @@ elif int(resources[2]) == 0:
 		<center><img src="http://i.imgur.com/MwyPH84.jpg" alt="DeuceVille" style="width:800px;height:400px;">
 		</center>
 		<form action="http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi" method="get">
-		    <input type="text" name="command" placeholder="What will you do at DeuceVille?" style="width:800px;"></br>
+		    <input type="text" name="command" placeholder="What will you do at DeuceVille?" style="width:800px;"/></br>
 		    <input title="commands: PLAY, DROP, EXIT, REFRESH" style="width:100px
-		      ;height:20px;" type="submit" value="Submit">
-		    <input type="hidden" name="inventory" value="{0},{1}">
+		      ;height:20px;" type="submit" value="Submit"/>
+		    <input type="hidden" name="inventory" value="{0},{1}"/>
 		</form>
 		<center>
 			<table>
 				<tr>
 					<th></th>
 					<th>
-						<form action="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py" method="get">
+						<form action="http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py" method="get">
 							<input type="submit" value="North" />
-							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=http%3A%2F%2Fwww.cs.mcgill.ca%2F%7Emma106%2Froom.html&inventory={0}%2C{1}"/>
+							<input type="hidden" name="URL" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=nothing&inventory={0}%2C{1}"/>
 							<input type="hidden" name=inventory value="{0},{1}" />
+							<input type="hidden" name="transporter" value="http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/"/>
 						</form>
 					</th>
 					<th></th>
 				</tr>
 				<tr>
 					<th>
-						<form action="http://google.com">
+						<form action="http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py">
 							<input type="submit" value="West" />
-							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=http%3A%2F%2Fwww.cs.mcgill.ca%2F%7Emma106%2Froom.html&inventory={0}%2C{1}"/>
+							<input type="hidden" name="URL" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=nothing&inventory={0}%2C{1}"/>
 							<input type="hidden" name=inventory value="{0},{1}" />
+							<input type="hidden" name="transporter" value="http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py"/>
 						</form>
 					</th>
 					<th></th>
 					<th>
-						<form action="http://google.com">
+						<form action="http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py">
 							<input type="submit" value="East" />
-							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=http%3A%2F%2Fwww.cs.mcgill.ca%2F%7Emma106%2Froom.html&inventory={0}%2C{1}"/>
+							<input type="hidden" name="URL" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=nothing&inventory={0}%2C{1}"/>
 							<input type="hidden" name=inventory value="{0},{1}" />
+							<input type="hidden" name="transporter" value="http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py"/>
 						</form>
 					</th>
 				</tr>
 				<tr>
 					<th></th>
 					<th>
-						<form action="http://google.com">
+						<form action="http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py">
 							<input type="submit" value="South" />
-							<input type="hidden" name="url" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=http%3A%2F%2Fwww.cs.mcgill.ca%2F%7Emma106%2Froom.html&inventory={0}%2C{1}"/>
-							<input type="hidden" name=inventory value="{0},{1}" />
+							<input type="hidden" name="URL" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?URL=nothing&inventory=10%2C10"/>
+							<input type="hidden" name=inventory value="10,10" />
+							<input type="hidden" name="transporter" value="http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py"/>
 						</form>
 					</th>
 					<th></th>
@@ -99,6 +104,7 @@ elif int(resources[2]) == 0:
 
 		</body>
 		</html>
+
 
 	""".format(mana,gold)
 

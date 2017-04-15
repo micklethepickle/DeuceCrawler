@@ -174,7 +174,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"North\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -185,7 +185,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"West\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -194,7 +194,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"East\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -205,7 +205,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"South\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -216,7 +216,7 @@ int main(void){
 			"</center>"
 
 			"</body>"
-			"</html>",pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold);
+			"</html>",pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold);
 	}else{
 		//reload the page
 		printf("Content-type:text/html\n\n");
@@ -241,7 +241,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"North\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -252,7 +252,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"West\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -261,7 +261,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"East\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -272,7 +272,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"South\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -283,7 +283,7 @@ int main(void){
 			"</center>"
 
 			"</body>"
-			"</html>",pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold);
+			"</html>",pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold);
 	}
 		
 					
@@ -349,7 +349,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"North\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -360,7 +360,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"West\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -369,7 +369,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"East\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -380,7 +380,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"South\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -391,7 +391,7 @@ int main(void){
 			"</center>"
 
 			"</body>"
-			"</html>",pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold);
+			"</html>",pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold);
 	//OTHER
 	}else{
 
@@ -418,7 +418,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"North\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -429,7 +429,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"West\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -438,7 +438,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"East\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -449,7 +449,7 @@ int main(void){
 						"<th>"
 							"<form action=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py\" method=\"get\">"
 								"<input type=\"submit\" value=\"South\" />"
-								"<input type=\"hidden\" name=\"url\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/room.cgi?command=REFRESH\"/>"
+								"<input type=\"hidden\" name=\"URL\" value=\"http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=%d%%2C%d\"/>"
 								"<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">"
 								"<input type=\"hidden\" name=\"transporter\" value=\"http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py/\"/>"
 							"</form>"
@@ -460,7 +460,7 @@ int main(void){
 			"</center>"
 
 			"</body>"
-			"</html>",pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold);
+			"</html>",pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold,pMana,pGold);
 	}
 	
 	

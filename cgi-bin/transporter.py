@@ -93,8 +93,8 @@ elif int(resources[2]) == 0:
 					<th>
 						<form action="http://www.cs.mcgill.ca/~mma106/cgi-bin/transportOut.py">
 							<input type="submit" value="South" />
-							<input type="hidden" name="URL" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory=10%2C10"/>
-							<input type="hidden" name=inventory value="10,10" />
+							<input type="hidden" name="URL" value="http://www.cs.mcgill.ca/~mma106/cgi-bin/transporter.py?inventory={0}%2C{1}"/>
+							<input type="hidden" name=inventory value="{0},{1}" />
 							<input type="hidden" name="transporter" value="http://www.cs.mcgill.ca/~walhas1/cgi-bin/transporter.py"/>
 						</form>
 					</th>

@@ -29,4 +29,3 @@ properUrl = transporterUrl + "?URL=" + roomUrl + "&inventory=" + mana + "%2C" + 
 print "Content-type: text/html"
 print "location:{0}\r\n".format(properUrl)
 
-

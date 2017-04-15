@@ -10,7 +10,8 @@ form = cgi.FieldStorage()
 inventory = (form["inventory"].value).split(",")
 mana = int(inventory[0]) - 1
 gold = int(inventory[1])
-roomUrl = form["URL"].value
+if "URL" in form:
+	roomUrl = form["URL"].value
 
 resources_file = open("./resources.csv", "r")
 resources = resources_file.read().split(",")
